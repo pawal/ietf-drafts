@@ -79,7 +79,7 @@ copyright law applies.
 The _license record is published in the zone using the DNS TXT resource
 record type.
 
-The RDATA for the _copyright resource record is textual in format and is
+The RDATA for the _license resource record is textual in format and is
 a HTTP URL leading to the full license text represented in either plain
 text or HTML. Example:
 
