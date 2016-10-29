@@ -3,12 +3,12 @@
     Title = "DNS Copyright and License prefixes"
     abbrev = "DNS Copyright"
     category = "info"
-    docName = "draft-wallstrom-dnsop-copyright-prefix-00"
+    docName = "draft-wallstrom-dnsop-copyright-prefix-01"
     ipr= "trust200902"
     area = "ops"
     workgroup = "dnsop"
  
-    date = 2016-04-04T14:00:00Z
+    date = 2016-10-29T12:00:00Z
  
     [[author]]
     initials="P."
