@@ -27,8 +27,10 @@ and license from which the content of the zone file is available. The
 typical use is to make a zone file available after an agreement on use
 (license) has been made. When the zone file is publicly available through
 DNS, there is no way of signalling the copyright ownership or any end user
-license of the content. This document describes two prefixes for handling
-this using the TXT RR type, _copyright and _license.
+license of the content. Other means of distributing the zone file allows
+this, such as using comments in a zone file distributed over other
+channels. This document describes two prefixes for handling this using the
+TXT RR type, _copyright and _license.
 
 {mainmatter}
 
@@ -66,7 +68,7 @@ record type.
 The RDATA for the _copyright resource record is textual in format using the
 following template:
 
-copyright IN TXT "Copyright (C) YEAR Your Name or Organization"
+_copyright IN TXT "Copyright (C) YEAR Your Name or Organization"
 
 The copyright applies to the specific zone of where the _copyright TXT RR
 is found. The copyright itself is a sui generis database right that covers
@@ -83,12 +85,15 @@ The RDATA for the _license resource record is textual in format and is
 a HTTP URL leading to the full license text represented in either plain
 text or HTML. Example:
 
-license IN TXT &quot;https\://www.example.com/license.txt&quot;
+_license IN TXT &quot;https\://www.example.com/license.txt&quot;
+
+The _license record can be omitted if there is no license given to the
+client, of written as "All rights reserved." if no use rights are given.
 
 
 # Security Considerations
 
-This document has no security considerations (yet).
+This document has no security considerations.
 
 
 # IANA Considerations
